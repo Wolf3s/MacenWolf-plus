@@ -1,8 +1,8 @@
 // WL_CONF.CPP
 
 #include "WL_DEF.H"
-#include "wl_conf.h"
-
+#include "WL_CONF.H"
+#include <io.h>
 //===========================================================================
 
 gameConfig  gameVars; 

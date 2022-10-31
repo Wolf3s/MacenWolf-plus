@@ -115,8 +115,9 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
-				AdditionalIncludeDirectories="&quot;F:\SDL-1.2.12\include&quot;"
+				AdditionalIncludeDirectories="C:\SDL\include\SDL"
 				PreprocessorDefinitions="_CRT_NONSTDC_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS"
+				StringPooling="true"
 				RuntimeLibrary="0"
 				WarningLevel="3"
 				Detect64BitPortabilityProblems="true"
@@ -134,7 +135,7 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="SDL.lib SDL_mixer.lib"
-				AdditionalLibraryDirectories="&quot;F:\SDL-1.2.12\lib&quot;"
+				AdditionalLibraryDirectories="C:\SDL\lib\x86"
 				GenerateDebugInformation="true"
 				SubSystem="2"
 				OptimizeReferences="2"
@@ -176,31 +177,43 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
-				RelativePath=".\id_ca.cpp"
+				RelativePath=".\asmcomp.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\id_in.cpp"
+				RelativePath=".\ID_CA.CPP"
 				>
 			</File>
 			<File
-				RelativePath=".\id_pm.cpp"
+				RelativePath=".\ID_IN.CPP"
 				>
 			</File>
 			<File
-				RelativePath=".\id_sd.cpp"
+				RelativePath=".\ID_PM.CPP"
 				>
 			</File>
 			<File
-				RelativePath=".\id_us_1.cpp"
+				RelativePath=".\ID_SD.CPP"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\ID_US_1.CPP"
 				>
 			</File>
 			<File
-				RelativePath=".\id_vh.cpp"
+				RelativePath=".\ID_VH.CPP"
 				>
 			</File>
 			<File
-				RelativePath=".\id_vl.cpp"
+				RelativePath=".\ID_VL.CPP"
 				>
 			</File>
 			<File
@@ -208,31 +221,39 @@
 				>
 			</File>
 			<File
-				RelativePath=".\signon.cpp"
+				RelativePath=".\SIGNON.CPP"
 				>
 			</File>
 			<File
-				RelativePath=".\sodpal.inc"
+				RelativePath=".\vieasm.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\wl_act1.cpp"
+				RelativePath=".\WL_ACT1.CPP"
 				>
 			</File>
 			<File
-				RelativePath=".\wl_act2.cpp"
+				RelativePath=".\WL_ACT2.CPP"
 				>
 			</File>
 			<File
-				RelativePath=".\wl_agent.cpp"
+				RelativePath=".\WL_AGENT.CPP"
 				>
 			</File>
 			<File
-				RelativePath=".\wl_atmos.cpp"
+				RelativePath=".\WL_ATMOS.CPP"
 				>
 			</File>
 			<File
-				RelativePath=".\wl_debug.cpp"
+				RelativePath=".\wl_cloudsky.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\wl_conf.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\WL_DEBUG.CPP"
 				>
 			</File>
 			<File
@@ -240,7 +261,7 @@
 				>
 			</File>
 			<File
-				RelativePath=".\wl_draw.cpp"
+				RelativePath=".\WL_DRAW.CPP"
 				>
 			</File>
 			<File
@@ -248,19 +269,35 @@
 				>
 			</File>
 			<File
-				RelativePath=".\wl_game.cpp"
+				RelativePath=".\WL_GAME.CPP"
 				>
 			</File>
 			<File
-				RelativePath=".\wl_inter.cpp"
+				RelativePath=".\WL_INTER.CPP"
 				>
 			</File>
 			<File
-				RelativePath=".\wl_main.cpp"
+				RelativePath=".\WL_MAIN.CPP"
 				>
 			</File>
 			<File
-				RelativePath=".\wl_menu.cpp"
+				RelativePath=".\WL_MENU.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\WL_MENU_OLD.CPP"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\wl_modcfg.cpp"
 				>
 			</File>
 			<File
@@ -268,19 +305,35 @@
 				>
 			</File>
 			<File
-				RelativePath=".\wl_play.cpp"
+				RelativePath=".\WL_PLAY.CPP"
 				>
 			</File>
 			<File
-				RelativePath=".\wl_shade.cpp"
+				RelativePath=".\WL_SHADE.CPP"
 				>
 			</File>
 			<File
-				RelativePath=".\wl_state.cpp"
+				RelativePath=".\WL_STATE.CPP"
 				>
 			</File>
 			<File
-				RelativePath=".\wl_text.cpp"
+				RelativePath=".\WL_TEXT.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\wl_wall_2corners.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\wl_wall_half.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\wl_wall_quart.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\wl_wall_threequart.cpp"
 				>
 			</File>
 			<File
@@ -342,91 +395,127 @@
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
 			<File
-				RelativePath=".\audiosod.h"
+				RelativePath=".\asmcomp.h"
 				>
 			</File>
 			<File
-				RelativePath=".\audiowl6.h"
+				RelativePath=".\asmcref.h"
 				>
 			</File>
 			<File
-				RelativePath=".\dc_vmu.h"
+				RelativePath=".\AUDIOSOD.H"
 				>
 			</File>
 			<File
-				RelativePath=".\f_spear.h"
+				RelativePath=".\AUDIOWL6.H"
 				>
 			</File>
 			<File
-				RelativePath=".\foreign.h"
+				RelativePath=".\F_SPEAR.H"
 				>
 			</File>
 			<File
-				RelativePath=".\gfxv_apo.h"
+				RelativePath=".\FOREIGN.H"
 				>
 			</File>
 			<File
-				RelativePath=".\gfxv_jap.h"
+				RelativePath=".\GFXV_APO.H"
 				>
 			</File>
 			<File
-				RelativePath=".\gfxv_sod.h"
+				RelativePath=".\GFXV_JAP.H"
 				>
 			</File>
 			<File
-				RelativePath=".\gfxv_wl6.h"
+				RelativePath=".\GFXV_SOD.H"
 				>
 			</File>
 			<File
-				RelativePath=".\gp2x.h"
+				RelativePath=".\GFXV_WL6.H"
 				>
 			</File>
 			<File
-				RelativePath=".\id_ca.h"
+				RelativePath=".\GP2X.H"
 				>
 			</File>
 			<File
-				RelativePath=".\id_in.h"
+				RelativePath=".\ID_CA.H"
 				>
 			</File>
 			<File
-				RelativePath=".\id_pm.h"
+				RelativePath=".\ID_IN.H"
 				>
 			</File>
 			<File
-				RelativePath=".\id_sd.h"
+				RelativePath=".\ID_PM.H"
 				>
 			</File>
 			<File
-				RelativePath=".\id_us.h"
+				RelativePath=".\ID_SD.H"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\ID_US.H"
 				>
 			</File>
 			<File
-				RelativePath=".\id_vh.h"
+				RelativePath=".\ID_VH.H"
 				>
 			</File>
 			<File
-				RelativePath=".\id_vl.h"
+				RelativePath=".\ID_VL.H"
 				>
 			</File>
 			<File
-				RelativePath=".\version.h"
+				RelativePath=".\VERSION.H"
 				>
 			</File>
 			<File
-				RelativePath=".\wl_atmos.h"
+				RelativePath=".\vieasm.h"
 				>
 			</File>
 			<File
-				RelativePath=".\wl_def.h"
+				RelativePath=".\WL_ATMOS.H"
 				>
 			</File>
 			<File
-				RelativePath=".\wl_menu.h"
+				RelativePath=".\wl_cloudsky.h"
 				>
 			</File>
 			<File
-				RelativePath=".\wl_shade.h"
+				RelativePath=".\wl_conf.h"
+				>
+			</File>
+			<File
+				RelativePath=".\WL_DEF.H"
+				>
+			</File>
+			<File
+				RelativePath=".\WL_MENU.H"
+				>
+			</File>
+			<File
+				RelativePath=".\WL_MENU_OLD.H"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\WL_SHADE.H"
 				>
 			</File>
 			<Filter
@@ -448,15 +537,15 @@
 			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
 			>
 			<File
+				RelativePath=".\WIN\Macen.ico"
+				>
+			</File>
+			<File
+				RelativePath=".\WIN\Macen.rc"
+				>
+			</File>
+			<File
 				RelativePath=".\win\resource.h"
-				>
-			</File>
-			<File
-				RelativePath=".\win\Macen.ico"
-				>
-			</File>
-			<File
-				RelativePath=".\win\Macen.rc"
 				>
 			</File>
 		</Filter>

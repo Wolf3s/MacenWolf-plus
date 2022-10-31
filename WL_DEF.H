@@ -79,7 +79,7 @@ typedef struct
 void Quit(const char *errorStr, ...);
 
 #include "id_pm.h"
-#include "asmcomp.h"
+#include "id_vieasm.h"
 #include "id_in.h"
 #include "id_vl.h"
 #include "id_vh.h"
@@ -1447,14 +1447,14 @@ extern void SetResolution(boolean full);
 extern int vidresx,vidresy;
 extern int interhandle; 
 
-extern boolean PartVertWallNW (int32_t xstep, int32_t ystep);
-extern boolean PartHorizWallNW (int32_t xstep, int32_t ystep);
-extern boolean PartVertWallNE (int32_t xstep, int32_t ystep);
-extern boolean PartHorizWallNE (int32_t xstep, int32_t ystep);
-extern boolean PartVertWallSE (int32_t xstep, int32_t ystep);
-extern boolean PartHorizWallSE (int32_t xstep, int32_t ystep);
-extern boolean PartVertWallSW (int32_t xstep, int32_t ystep);
-extern boolean PartHorizWallSW (int32_t xstep, int32_t ystep);
+extern boolean PartVertWallNW(int32_t xstep, int32_t ystep);
+extern boolean PartHorizWallNW(int32_t xstep, int32_t ystep);
+extern boolean PartVertWallNE(int32_t xstep, int32_t ystep);
+extern boolean PartHorizWallNE(int32_t xstep, int32_t ystep);
+extern boolean PartVertWallSE(int32_t xstep, int32_t ystep);
+extern boolean PartHorizWallSE(int32_t xstep, int32_t ystep);
+extern boolean PartVertWallSW(int32_t xstep, int32_t ystep);
+extern boolean PartHorizWallSW(int32_t xstep, int32_t ystep);
 
 extern boolean HalfHorizWallTopW2E(int32_t xstep, int32_t ystep);
 extern boolean HalfVertWallTopW2E(int32_t xstep, int32_t ystep);
@@ -1478,6 +1478,8 @@ extern boolean TwoHorizWallNW2SE(int32_t xstep, int32_t ystep);
 extern boolean TwoVertWallNW2SE(int32_t xstep, int32_t ystep);
 extern boolean TwoHorizWallNE2SW(int32_t xstep, int32_t ystep);
 extern boolean TwoVertWallNE2SW(int32_t xstep, int32_t ystep);
+
+extern void HitVertWall(void);
 
 extern void HitVertWall (void);
 extern void HitHorizWall (void);
@@ -1785,4 +1787,3 @@ static inline longword READLONGWORD(byte *&ptr)
 #endif
 
 #endif
-

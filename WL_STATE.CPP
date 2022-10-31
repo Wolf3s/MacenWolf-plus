@@ -1602,7 +1602,7 @@ boolean CheckLine (objtype *ob, boolean gamer)
 
 boolean CheckLine (objtype *ob)
 {
-    CheckLine (ob, false);
+   return CheckLine (ob, false);
 }
 
 /*

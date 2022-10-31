@@ -51,16 +51,16 @@ ifndef GPL
 else
     SRCS += dosbox/dbopl.cpp
 endif
-SRCS += asmcomp.cpp
+
 SRCS += id_ca.cpp
 SRCS += id_in.cpp
 SRCS += id_pm.cpp
 SRCS += id_sd.cpp
 SRCS += id_us_1.cpp
+SRCS += id_vieasm.cpp
 SRCS += id_vh.cpp
 SRCS += id_vl.cpp
 SRCS += signon.cpp
-SRCS += vieasm.cpp
 SRCS += wl_act1.cpp
 SRCS += wl_act2.cpp
 SRCS += wl_agent.cpp

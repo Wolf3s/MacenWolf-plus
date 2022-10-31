@@ -4,8 +4,8 @@
 //
 
 #include "WL_DEF.H"
-#include "wl_conf.h"
-  
+#include "WL_CONF.H"
+#include <io.h>
 //===========================================================================
 
 modfile   mod;
@@ -40,6 +40,7 @@ int spritescale;
 int ReadModStuff(void)
 {
     int value;
+#ifdef CRAP 
     char *cfg_string;
     
     if(strncmp(cfg_line, "ammo_start", 10) == 0)
@@ -1967,7 +1968,7 @@ int ReadModStuff(void)
     
     if(gameVars.char_count >= 2 && cfg_line[0] == '/' && cfg_line[1] == '/') // comment
         return -1; 
-
+#endif
     return value;
 }
 

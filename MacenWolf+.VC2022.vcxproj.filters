@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="mame\fmopl.cpp">
+      <Filter>FMOPL</Filter>
+    </ClCompile>
+    <ClCompile Include="dosbox\dbopl.cpp">
+      <Filter>DBOPL</Filter>
+    </ClCompile>
+    <ClCompile Include="ID_CA.CPP" />
+    <ClCompile Include="ID_IN.CPP" />
+    <ClCompile Include="ID_PM.CPP" />
+    <ClCompile Include="ID_SD.CPP" />
+    <ClCompile Include="ID_US_1.CPP" />
+    <ClCompile Include="ID_VH.CPP" />
+    <ClCompile Include="ID_VL.CPP" />
+    <ClCompile Include="SDL_WINMAIN.CPP" />
+    <ClCompile Include="SIGNON.CPP" />
+    <ClCompile Include="WL_ACT1.CPP" />
+    <ClCompile Include="WL_ACT2.CPP" />
+    <ClCompile Include="WL_AGENT.CPP" />
+    <ClCompile Include="WL_ATMOS.CPP" />
+    <ClCompile Include="WL_CLOUDSKY.CPP" />
+    <ClCompile Include="WL_CONF.CPP" />
+    <ClCompile Include="WL_DEBUG.CPP" />
+    <ClCompile Include="WL_DIR3DSPR.CPP" />
+    <ClCompile Include="WL_DRAW.CPP" />
+    <ClCompile Include="WL_FLOORCEILING.CPP" />
+    <ClCompile Include="WL_GAME.CPP" />
+    <ClCompile Include="WL_INTER.CPP" />
+    <ClCompile Include="WL_MAIN.CPP" />
+    <ClCompile Include="WL_MENU.CPP" />
+    <ClCompile Include="WL_MENU_OLD.CPP" />
+    <ClCompile Include="WL_MODCFG.CPP" />
+    <ClCompile Include="WL_PARALLAX.CPP" />
+    <ClCompile Include="WL_PLAY.CPP" />
+    <ClCompile Include="WL_SHADE.CPP" />
+    <ClCompile Include="WL_STATE.CPP" />
+    <ClCompile Include="WL_TEXT.CPP" />
+    <ClCompile Include="WL_WALL.CPP" />
+    <ClCompile Include="ID_VIEASM.H" />
+    <ClCompile Include="ID_VIEASM.CPP" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mame\fmopl.h">
+      <Filter>FMOPL</Filter>
+    </ClInclude>
+    <ClInclude Include="dosbox\dbopl.h">
+      <Filter>DBOPL</Filter>
+    </ClInclude>
+    <ClInclude Include="ASMCREF.H" />
+    <ClInclude Include="AUDIOSOD.H" />
+    <ClInclude Include="AUDIOWL6.H" />
+    <ClInclude Include="F_SPEAR.H" />
+    <ClInclude Include="FOREIGN.H" />
+    <ClInclude Include="GFXV_APO.H" />
+    <ClInclude Include="GFXV_JAP.H" />
+    <ClInclude Include="GFXV_SOD.H" />
+    <ClInclude Include="GFXV_WL6.H" />
+    <ClInclude Include="ID_CA.H" />
+    <ClInclude Include="ID_IN.H" />
+    <ClInclude Include="ID_PM.H" />
+    <ClInclude Include="ID_SD.H" />
+    <ClInclude Include="ID_US.H" />
+    <ClInclude Include="ID_VH.H" />
+    <ClInclude Include="ID_VL.H" />
+    <ClInclude Include="VERSION.H" />
+    <ClInclude Include="WL_ATMOS.H" />
+    <ClInclude Include="WL_CLOUDSKY.H" />
+    <ClInclude Include="WL_CONF.H" />
+    <ClInclude Include="WL_DEF.H" />
+    <ClInclude Include="WL_MENU.H" />
+    <ClInclude Include="WL_MENU_OLD.H" />
+    <ClInclude Include="WL_SHADE.H" />
+    <ClInclude Include="WL_MODCFG.H" />
+    <ClInclude Include="WIN\resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitattributes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="DOCS">
+      <UniqueIdentifier>{0b0cd45a-712f-4a50-a391-a1d16c9230c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DBOPL">
+      <UniqueIdentifier>{a2a80c73-f5d3-4ccb-abb3-c8ec9e241e16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FMOPL">
+      <UniqueIdentifier>{c8cf18e8-ab75-43a8-af98-55df6f435fc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WIN">
+      <UniqueIdentifier>{bee7bb64-acc9-4f96-b488-4c530ceea43b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="DOCS\Changes.txt">
+      <Filter>DOCS</Filter>
+    </Text>
+    <Text Include="DOCS\Changes-dc.txt">
+      <Filter>DOCS</Filter>
+    </Text>
+    <Text Include="DOCS\README-things.txt">
+      <Filter>DOCS</Filter>
+    </Text>
+    <Text Include="DOCS\README-who.txt">
+      <Filter>DOCS</Filter>
+    </Text>
+    <Text Include="DOCS\README-Wolf4SDL.TXT">
+      <Filter>DOCS</Filter>
+    </Text>
+    <Text Include="DOCS\README-Wolf4SDL-dc.txt">
+      <Filter>DOCS</Filter>
+    </Text>
+    <Text Include="DOCS\README-Wolf4SDL-devcpp.txt">
+      <Filter>DOCS</Filter>
+    </Text>
+    <Text Include="DOCS\README-Wolf4SDL-GP2X.txt">
+      <Filter>DOCS</Filter>
+    </Text>
+    <Text Include="DOCS\SVNLOG.TXT">
+      <Filter>DOCS</Filter>
+    </Text>
+    <Text Include="DOCS\wolfinst.txt">
+      <Filter>DOCS</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="WIN\Macen.ico">
+      <Filter>WIN</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WIN\Macen.rc">
+      <Filter>WIN</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
